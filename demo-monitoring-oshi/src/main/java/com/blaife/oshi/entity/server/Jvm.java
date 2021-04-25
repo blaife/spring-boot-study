@@ -1,4 +1,4 @@
-package com.blaife.oshi.entity;
+package com.blaife.oshi.entity.server;
 
 import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
@@ -57,7 +57,7 @@ public class Jvm implements Serializable {
     }
 
     /**
-     * 使用占比
+     * JVM内存使用占比
      */
     public double getUsage() {
         return NumberUtil.mul(NumberUtil.div(total - free, total, 4), 100);
@@ -80,17 +80,21 @@ public class Jvm implements Serializable {
     }
 
     /**
-     * 获取运行时间
+     * 获取运行时长
      */
     public String getRunTime() {
+        // 启动时间
         long time = ManagementFactory.getRuntimeMXBean().getStartTime();
         Date date = new Date(time);
 
-        // 运行了多少分钟
+        // 运行了多长时间 ms（毫秒）
         long runMS = DateUtil.between(date, new Date(), DateUnit.MS);
 
+        // 一天的毫秒数
         long nd = 1000 * 24 * 60 * 60;
+        // 一小时的毫秒数
         long nh = 1000 * 60 * 60;
+        // 一分钟的毫秒数
         long nm = 1000 * 60;
 
         long day = runMS / nd;
@@ -98,5 +102,34 @@ public class Jvm implements Serializable {
         long min = runMS % nd % nh / nm;
 
         return day + "天" + hour + "小时" + min + "分钟";
+    }
+
+    /**
+     * 运行时常（MS）
+     * @return
+     */
+    public long getRunTimeForMS() {
+        // 启动时间
+        long time = ManagementFactory.getRuntimeMXBean().getStartTime();
+        Date date = new Date(time);
+
+        // 运行了多长时间 ms（毫秒）
+        return DateUtil.between(date, new Date(), DateUnit.MS);
+    }
+
+    @Override
+    public String toString() {
+        return "Jvm ：{" +
+                "\n\t当前 JVM 占用的内存总数 (M) ： " + total +
+                ", \n\tJVM 最大可用内存总数 (M) ： " + max +
+                ", \n\tJVM 空闲内存 (M) ： " + free +
+                ", \n\tJDK 版本 ： " + version +
+                ", \n\tJDK 路径 ： " + home +
+                ", \n\tJVM 内存使用占比 ： " + getUsage() +
+                ", \n\tJDK 名称 ： " + getName() +
+                ", \n\tJDK 启动时间 ： " + getStartTime() +
+                ", \n\tJDK 运行时长 ： " + getRunTime() +
+                ", \n\tJDK 运行时长（MS） ： " + getRunTimeForMS() +
+                "\n}";
     }
 }
