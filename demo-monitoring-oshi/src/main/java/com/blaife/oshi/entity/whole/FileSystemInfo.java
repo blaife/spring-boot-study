@@ -34,7 +34,6 @@ public class FileSystemInfo {
                     fs.getName(), fs.getDescription().isEmpty() ? "文件系统" : fs.getDescription(), fs.getType(),
                     FormatUtil.formatBytes(usable), FormatUtil.formatBytes(fs.getTotalSpace()), 100d * usable / total,
                     fs.getVolume(), fs.getLogicalVolume(), fs.getMount());
-
         }
     }
 }
