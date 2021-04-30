@@ -26,7 +26,7 @@ public class ProcessesInfo {
         System.out.println("进程数量: " + os.getProcessCount() + ", 线程数量: " + os.getThreadCount());
         // 按最高CPU排序
         OSProcess[] procs = os.getProcesses(os.getProcessCount(), OperatingSystem.ProcessSort.CPU);
-        System.out.println("----------------------------------------");
+        System.out.println("-------------------------------------------");
         System.out.println("   PID  %CPU %MEM       VSZ       RSS Name");
         for (OSProcess p : procs) {
             System.out.format(" %5d %5.1f %4.1f %9s %9s %s%n", p.getProcessID(),
