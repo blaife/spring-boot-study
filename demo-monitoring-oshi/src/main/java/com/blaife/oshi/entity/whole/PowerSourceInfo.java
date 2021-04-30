@@ -4,8 +4,6 @@ import oshi.SystemInfo;
 import oshi.hardware.HardwareAbstractionLayer;
 import oshi.hardware.PowerSource;
 
-import java.math.BigDecimal;
-
 /**
  * @author blaife
  * @description 电源信息
