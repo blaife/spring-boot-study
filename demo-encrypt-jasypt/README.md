@@ -231,33 +231,15 @@ public void decryptPwd() {
   ```
 2. 启动项目调用接口查看项目是否可以正常运行
 ## 6. 自定义加密
+
+创建自定义加密类并实现`StringEncryptor`接口
 ```java
-public class BlaifeEncryptorCfg {
 
-    @Bean(name = "blaifeEncryptor")
-    public StringEncryptor blaifeStringEncryptor() {
-
-        PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
-
-        SimpleStringPBEConfig config = new SimpleStringPBEConfig();
-        config.setPassword("Blaife");
-        config.setAlgorithm("PBEWITHHMACSHA512ANDAES_256");
-        config.setKeyObtentionIterations("1000");
-        config.setPoolSize("1");
-        config.setProviderName("SunJCE");
-        config.setSaltGeneratorClassName("org.jasypt.salt.RandomSaltGenerator");
-        config.setIvGeneratorClassName("org.jasypt.iv.RandomIvGenerator");
-        config.setStringOutputType("base64");
-        encryptor.setConfig(config);
-
-        return encryptor;
-    }
-}
 ```
 ## 7. 隐藏 `jasypt.encryptor.password`
 1. 在IDEA中配置  
    Run->Edit Configrations...
-   ![123](resources/Edit%20Configrations.png)
+   ![Edit%20Configrations.png](resources/Edit%20Configrations.png)
 2. 作为程序启动时的命令行参数来带入  
    `java -jar yourproject.jar --jasypt.encryptor.password=blaife`
 3. 作为程序启动时的应用环境变量来带入  
