@@ -16,6 +16,6 @@ public class AspectjServiceImpl implements AspectjService {
     @Override
     public String testAspectJ(String param) {
         System.out.println(param);
-        return param;
+        return param+": 返回值";
     }
 }
