@@ -11,7 +11,7 @@
     <groupId>com.blaife</groupId>
     <artifactId>jasypt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-encrypt-jasypt</name>
+    <name>encrypt-jasypt</name>
     <description>Demo project for Jasypt</description>
     <properties>
         <java.version>1.8</java.version>

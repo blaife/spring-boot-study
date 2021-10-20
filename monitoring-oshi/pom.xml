@@ -11,7 +11,7 @@
     <groupId>com.blaife</groupId>
     <artifactId>demo-monitoring-oshi</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-monitoring-oshi</name>
+    <name>monitoring-oshi</name>
     <description>Demo project for OSHI</description>
     <properties>
         <java.version>1.8</java.version>
