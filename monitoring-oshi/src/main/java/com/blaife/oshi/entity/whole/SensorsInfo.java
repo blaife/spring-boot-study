@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * @author blaife
  * @description 传感器信息
- * @data 2021/4/29 21:32
+ * @date 2021/4/29 21:32
  */
 public class SensorsInfo {
 

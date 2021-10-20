@@ -5,8 +5,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+/**
+ * @author blaife
+ * @description 自定义加密
+ * @date 2021/06/30
+ */
 @SpringBootTest
-class AspectJApplicationTests {
+class AspectjApplicationTests {
 
     @Autowired
     private AspectjService aspectjService;

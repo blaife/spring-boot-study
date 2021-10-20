@@ -10,7 +10,7 @@ import oshi.util.FormatUtil;
 /**
  * @author blaife
  * @description 进程信息
- * @data 2021/4/28 20:43
+ * @date 2021/4/28 20:43
  */
 public class ProcessesInfo {
 

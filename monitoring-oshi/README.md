@@ -138,12 +138,10 @@ import java.io.Serializable;
 /**
  * @author blaife
  * @description Men 内存实体类
- * @data 2021/4/25 21:18
+ * @date 2021/4/25 21:18
  */
 @Data
 public class Mem implements Serializable {
-
-    private static final long SerialVersionUID = 1L;
 
     /**
      * 内存总量
@@ -201,12 +199,12 @@ import java.io.Serializable;
 /**
  * @author blaife
  * @description Sys 系统实体类
- * @data 2021/4/25 21:27
+ * @date 2021/4/25 21:27
  */
 @Data
 public class Sys implements Serializable {
 
-    private static final long serialVersionUID = 1l;
+    private static final long serialVersionUID = 1L;
 
     /**
      * 服务器名称
@@ -260,7 +258,7 @@ import java.util.Date;
 /**
  * @author blaife
  * @description Jvm 实体类
- * @data 2021/4/24 22:01
+ * @date 2021/4/24 22:01
  */
 @Data
 public class Jvm implements Serializable {
@@ -390,7 +388,7 @@ import lombok.Data;
 /**
  * @author blaife
  * @description SysFile 系统文件实体类
- * @data 2021/4/25 21:35
+ * @date 2021/4/25 21:35
  */
 @Data
 public class SysFile {
@@ -476,7 +474,7 @@ import java.util.Properties;
 /**
  * @author blaife
  * @description 主程序类
- * @data 2021/4/24 22:25
+ * @date 2021/4/24 22:25
  */
 @Data
 public class MainServer implements Serializable {

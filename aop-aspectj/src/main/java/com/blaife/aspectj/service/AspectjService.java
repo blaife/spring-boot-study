@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 /**
  * @author blaife
  * @description TODO
- * @data 2021/6/27 16:51
+ * @date 2021/6/27 16:51
  */
 public interface AspectjService {
 

@@ -4,17 +4,21 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### java ###
+*.class
+*.log
+
 ### STS ###
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr

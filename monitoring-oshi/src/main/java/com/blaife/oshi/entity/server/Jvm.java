@@ -12,12 +12,10 @@ import java.util.Date;
 /**
  * @author blaife
  * @description Jvm 实体类
- * @data 2021/4/24 22:01
+ * @date 2021/4/24 22:01
  */
 @Data
 public class Jvm implements Serializable {
-
-    private static final long serialVersionUID = 1L;
 
     /**
      * 当前 JVM 占用的内存总数 (M)

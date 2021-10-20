@@ -10,7 +10,7 @@ import java.util.Arrays;
 /**
  * @author blaife
  * @description 网络接口信息
- * @data 2021/4/30 8:43
+ * @date 2021/4/30 8:43
  */
 public class NetworkInterfacesInfo {
 

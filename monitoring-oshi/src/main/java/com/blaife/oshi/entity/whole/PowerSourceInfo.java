@@ -7,7 +7,7 @@ import oshi.hardware.PowerSource;
 /**
  * @author blaife
  * @description 电源信息
- * @data 2021/4/29 21:44
+ * @date 2021/4/29 21:44
  */
 public class PowerSourceInfo {
     public static void main(String[] args) {

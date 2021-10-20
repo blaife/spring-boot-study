@@ -7,7 +7,7 @@ import oshi.hardware.UsbDevice;
 /**
  * @author blaife
  * @description USB设备信息
- * @data 2021/5/1 17:22
+ * @date 2021/5/1 17:22
  */
 public class UsbDevicesInfo {
 

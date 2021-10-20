@@ -12,7 +12,7 @@ import java.util.Arrays;
 /**
  * @author blaife
  * @description 中央处理器信息
- * @data 2021/4/27 22:17
+ * @date 2021/4/27 22:17
  */
 public class CpuInfo {
 

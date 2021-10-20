@@ -9,7 +9,7 @@ import oshi.hardware.HardwareAbstractionLayer;
 /**
  * @author blaife
  * @description 计算机系统信息
- * @data 2021/4/26 21:50
+ * @date 2021/4/26 21:50
  */
 public class ComputerSystemInfo {
 

@@ -9,7 +9,7 @@ import oshi.util.FormatUtil;
 /**
  * @author blaife
  * @description 磁盘信息
- * @data 2021/4/29 22:24
+ * @date 2021/4/29 22:24
  */
 public class DisksInfo {
 

@@ -9,7 +9,7 @@ import oshi.util.FormatUtil;
 /**
  * @author blaife
  * @description 文件系统信息
- * @data 2021/4/29 22:30
+ * @date 2021/4/29 22:30
  */
 public class FileSystemInfo {
     public static void main(String[] args) {

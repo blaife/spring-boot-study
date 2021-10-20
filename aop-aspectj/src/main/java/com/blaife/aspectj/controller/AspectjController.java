@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author blaife
  * @description TODO
- * @data 2021/6/27 19:39
+ * @date 2021/6/27 19:39
  */
 @RestController
 @RequestMapping("/aspectj")

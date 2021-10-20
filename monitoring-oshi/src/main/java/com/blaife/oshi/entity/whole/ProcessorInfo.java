@@ -7,7 +7,7 @@ import oshi.hardware.HardwareAbstractionLayer;
 /**
  * @author blaife
  * @description 处理器信息
- * @data 2021/4/26 22:06
+ * @date 2021/4/26 22:06
  */
 public class ProcessorInfo {
 

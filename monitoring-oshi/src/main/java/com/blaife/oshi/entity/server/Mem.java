@@ -8,12 +8,10 @@ import java.io.Serializable;
 /**
  * @author blaife
  * @description Men 内存实体类
- * @data 2021/4/25 21:18
+ * @date 2021/4/25 21:18
  */
 @Data
 public class Mem implements Serializable {
-
-    private static final long SerialVersionUID = 1L;
 
     /**
      * 内存总量

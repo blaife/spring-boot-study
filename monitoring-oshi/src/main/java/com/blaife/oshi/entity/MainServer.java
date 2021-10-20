@@ -24,7 +24,7 @@ import java.util.Properties;
 /**
  * @author blaife
  * @description 主程序类
- * @data 2021/4/24 22:25
+ * @date 2021/4/24 22:25
  */
 @Data
 public class MainServer implements Serializable {

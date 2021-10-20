@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 /**
  * @author blaife
  * @description 自定义加密
- * @data 2021/5/10 22:25
+ * @date 2021/5/10 22:25
  */
 public class BlaifeEncryptorCfg {
 

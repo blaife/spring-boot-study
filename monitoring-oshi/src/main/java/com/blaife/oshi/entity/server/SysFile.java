@@ -5,12 +5,10 @@ import lombok.Data;
 /**
  * @author blaife
  * @description SysFile 系统文件实体类
- * @data 2021/4/25 21:35
+ * @date 2021/4/25 21:35
  */
 @Data
 public class SysFile {
-
-    private static final long serialVersionUID = 1L;
 
     /**
      * 盘符路径

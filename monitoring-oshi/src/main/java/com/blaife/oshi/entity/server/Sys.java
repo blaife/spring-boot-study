@@ -7,12 +7,10 @@ import java.io.Serializable;
 /**
  * @author blaife
  * @description Sys 系统实体类
- * @data 2021/4/25 21:27
+ * @date 2021/4/25 21:27
  */
 @Data
 public class Sys implements Serializable {
-
-    private static final long serialVersionUID = 1l;
 
     /**
      * 服务器名称

@@ -7,7 +7,7 @@ import oshi.hardware.HardwareAbstractionLayer;
 /**
  * @author blaife
  * @description 内存信息
- * @data 2021/4/27 21:51
+ * @date 2021/4/27 21:51
  */
 public class MemoryInfo {
 

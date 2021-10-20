@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * @author blaife
  * @description 网络参数信息
- * @data 2021/5/1 17:00
+ * @date 2021/5/1 17:00
  */
 public class NetworkParametersInfo {
 

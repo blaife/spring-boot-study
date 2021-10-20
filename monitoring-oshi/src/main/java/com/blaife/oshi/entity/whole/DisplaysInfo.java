@@ -8,7 +8,7 @@ import oshi.hardware.HardwareAbstractionLayer;
 /**
  * @author blaife
  * @description 显示器信息
- * @data 2021/5/1 17:12
+ * @date 2021/5/1 17:12
  */
 public class DisplaysInfo {
 

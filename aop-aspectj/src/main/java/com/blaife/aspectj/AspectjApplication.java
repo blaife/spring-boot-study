@@ -1,17 +1,18 @@
-package com.blaife.jasypt;
+package com.blaife.aspectj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @Author blaife
- * @Date 2021/05/09
+ * @author blaife
+ * @description 自定义加密
+ * @date 2021/06/30
  */
 @SpringBootApplication
-public class DemoEncryptJasyptApplication {
+public class AspectjApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoEncryptJasyptApplication.class, args);
+        SpringApplication.run(AspectjApplication.class, args);
     }
 
 }

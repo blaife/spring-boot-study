@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author blaife
- * @description TODO
- * @data 2021/5/9 9:58
+ * @date 2021/5/9 9:58
  */
 @RestController
 @RequestMapping("/jasypt")
