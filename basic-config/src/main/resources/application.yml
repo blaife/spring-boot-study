@@ -1,0 +1,9 @@
+server:
+  port: 9999
+
+my:
+  user:
+    - name: blaife
+      sex: 男
+    - name: power
+      sex: 女
