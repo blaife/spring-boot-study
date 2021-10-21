@@ -9,10 +9,10 @@ springboot 中的配置文件有两种不同的格式，一种是properties，�
 
 ### 配置文件的存放位置
 
-- 当前项目的根目录下的config目录下
-- 当前项目的根目录下
-- resource目录下的config目录下
-- resource目录下
+1. 当前项目的根目录下的config目录下
+1. 当前项目的根目录下
+1. resource目录下的config目录下
+1. resource目录下
 
 ***按照如上顺序，四个配置文件的优先级依次降低***
 
@@ -128,3 +128,56 @@ public class UserForSafety {
 
 yaml支持数组注入，但是目前不支持 `@PropertySource` 注解
 
+```yaml
+my:
+  user:
+    - name: blaife
+      sex: 男
+    - name: power
+      sex: 女
+```
+
+```java
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Component
+@ConfigurationProperties(prefix = "my")
+public class UserForArray {
+
+    private List<User> user = new ArrayList<>();
+
+    public List<User> getUser() {
+        return user;
+    }
+
+    public void setUser(List<User> user) {
+        this.user = user;
+    }
+}
+```
+
+## 静态资源存放位置
+
+在 `spring boot` 中，默认的情况下，一共有5个位置可以放静态资源，五个路径分别是如下5个：
+
+1. classpath:/META-INF/resources/
+1. classpath:/resources/
+1. classpath:/static/
+1. classpath:/public/
+1. /
+
+前四个目录都好理解，分别对应了resources目录下的不同的目录，而第五个 `/` 标识的是webapp目录。
+
+目录的优先级也是按照上述的顺序。
+
+### 自定义配置
+```properties
+spring.resources.static-locations=classpath:/
+spring.mvc.static-path-pattern=/**
+```
+第一行配置表示定义资源位置，第二行配置表示定义请求URL规则
+如果我们如上定义，那么可以将静态资源放置在resource目录下的任何位置，访问的时候也需要完整的路径

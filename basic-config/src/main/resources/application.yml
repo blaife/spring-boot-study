@@ -1,9 +1,17 @@
 server:
   port: 9999
 
+
 my:
   user:
     - name: blaife
       sex: 男
     - name: power
       sex: 女
+
+spring:
+  web:
+    resources:
+      static-locations: classpath:/
+  mvc:
+    static-path-pattern: /**
