@@ -23,7 +23,7 @@ class BasicConfigApplicationTests {
      * 基本的属性注入
      */
     @Test
-    void propertiesIntoForBasic() {
+    void propertiesIntoForBasicTest() {
         System.out.println(userForBasic.toString());
     }
 
@@ -31,7 +31,7 @@ class BasicConfigApplicationTests {
      * 安全的属性注入
      */
     @Test
-    void propertiesIntoForSafety() {
+    void propertiesIntoForSafetyTest() {
         System.out.println(userForSafety.toString());
     }
 
@@ -39,7 +39,7 @@ class BasicConfigApplicationTests {
      * 数组注入
      */
     @Test
-    void propertiesIntoForArray() {
+    void propertiesIntoForArrayTest() {
         userForArray.getUser().stream().forEach(a -> System.out.println(a));
     }
 
