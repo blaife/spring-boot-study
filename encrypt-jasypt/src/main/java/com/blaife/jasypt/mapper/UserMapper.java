@@ -16,6 +16,6 @@ public interface UserMapper {
      * @param id 用户ID
      * @return 用户实体
      */
-    @Select("SELECT name, age, sex FROM users WHERE `id` = #{id}")
+    @Select("select name, age, sex from users where `id` = #{id}")
     public User findUserById(long id);
 }
