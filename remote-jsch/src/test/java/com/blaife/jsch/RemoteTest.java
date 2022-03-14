@@ -1,7 +1,6 @@
 package com.blaife.jsch;
 
 import com.jcraft.jsch.*;
-import org.junit.jupiter.api.Test;
 
 import javax.swing.*;
 import java.io.FilterInputStream;
